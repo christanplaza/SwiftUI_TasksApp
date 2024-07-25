@@ -11,6 +11,11 @@
 		01A927382C5252C00049DB4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A927372C5252C00049DB4B /* ContentView.swift */; };
 		01A9273A2C5252C30049DB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A927392C5252C30049DB4B /* Assets.xcassets */; };
 		01A9273D2C5252C30049DB4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A9273C2C5252C30049DB4B /* Preview Assets.xcassets */; };
+		01A927442C5253480049DB4B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A927432C5253470049DB4B /* Task.swift */; };
+		01A927462C5253690049DB4B /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A927452C5253690049DB4B /* TaskViewModel.swift */; };
+		01A927482C52544D0049DB4B /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A927472C52544D0049DB4B /* TaskListView.swift */; };
+		01A9274A2C5255CA0049DB4B /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A927492C5255CA0049DB4B /* TaskDetailView.swift */; };
+		01A9274C2C52599C0049DB4B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 01A9274B2C52599C0049DB4B /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		01A927372C5252C00049DB4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01A927392C5252C30049DB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01A9273C2C5252C30049DB4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01A927432C5253470049DB4B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		01A927452C5253690049DB4B /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		01A927472C52544D0049DB4B /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		01A927492C5255CA0049DB4B /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		01A9274B2C52599C0049DB4B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 		01A927292C5252C00049DB4B = {
 			isa = PBXGroup;
 			children = (
+				01A9274B2C52599C0049DB4B /* .gitignore */,
 				01A927342C5252C00049DB4B /* SwiftUI_Tasks */,
 				01A927332C5252C00049DB4B /* Products */,
 			);
@@ -51,10 +62,14 @@
 		01A927342C5252C00049DB4B /* SwiftUI_Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				01A927472C52544D0049DB4B /* TaskListView.swift */,
+				01A927452C5253690049DB4B /* TaskViewModel.swift */,
 				01A927352C5252C00049DB4B /* SwiftUI_TasksApp.swift */,
 				01A927372C5252C00049DB4B /* ContentView.swift */,
 				01A927392C5252C30049DB4B /* Assets.xcassets */,
 				01A9273B2C5252C30049DB4B /* Preview Content */,
+				01A927432C5253470049DB4B /* Task.swift */,
+				01A927492C5255CA0049DB4B /* TaskDetailView.swift */,
 			);
 			path = SwiftUI_Tasks;
 			sourceTree = "<group>";
@@ -126,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A9273D2C5252C30049DB4B /* Preview Assets.xcassets in Resources */,
+				01A9274C2C52599C0049DB4B /* .gitignore in Resources */,
 				01A9273A2C5252C30049DB4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A927382C5252C00049DB4B /* ContentView.swift in Sources */,
+				01A927462C5253690049DB4B /* TaskViewModel.swift in Sources */,
+				01A9274A2C5255CA0049DB4B /* TaskDetailView.swift in Sources */,
+				01A927482C52544D0049DB4B /* TaskListView.swift in Sources */,
+				01A927442C5253480049DB4B /* Task.swift in Sources */,
 				01A927362C5252C00049DB4B /* SwiftUI_TasksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +300,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +330,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
